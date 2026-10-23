@@ -1,0 +1,23 @@
+{
+  "greeting": 32,
+  "goodbye": 31,
+  "search_web": 30,
+  "open_app": 64,
+  "get_time": 29,
+  "get_date": 30,
+  "system_info": 30,
+  "joke": 30,
+  "bot_identity": 30,
+  "general_question": 23,
+  "casual_talk": 30,
+  "thanks": 30,
+  "weather": 30,
+  "fallback": 30,
+  "math_help": 30,
+  "advice": 30,
+  "compliment": 30,
+  "insult": 30,
+  "play_music": 36,
+  "capabilities": 30,
+  "clear_context": 30
+}

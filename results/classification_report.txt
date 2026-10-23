@@ -1,0 +1,31 @@
+Dark AI — Classification Report
+==================================================
+Overall Accuracy: 64.66%
+
+                  precision    recall  f1-score   support
+
+          advice       0.44      0.67      0.53         6
+    bot_identity       0.00      0.00      0.00         6
+    capabilities       0.00      0.00      0.00         6
+     casual_talk       0.60      0.50      0.55         6
+   clear_context       0.83      0.83      0.83         6
+      compliment       0.67      0.67      0.67         6
+        fallback       0.16      0.67      0.26         6
+general_question       1.00      0.40      0.57         5
+        get_date       0.86      1.00      0.92         6
+        get_time       0.75      1.00      0.86         6
+         goodbye       0.67      0.33      0.44         6
+        greeting       0.80      0.67      0.73         6
+          insult       0.40      0.33      0.36         6
+            joke       0.83      0.83      0.83         6
+       math_help       1.00      0.50      0.67         6
+        open_app       0.76      1.00      0.87        13
+      play_music       0.80      0.57      0.67         7
+      search_web       1.00      1.00      1.00         6
+     system_info       1.00      0.83      0.91         6
+          thanks       1.00      0.67      0.80         6
+         weather       1.00      0.67      0.80         6
+
+        accuracy                           0.65       133
+       macro avg       0.69      0.63      0.63       133
+    weighted avg       0.70      0.65      0.64       133

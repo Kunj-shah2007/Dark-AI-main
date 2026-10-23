@@ -1,0 +1,183 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["hello", "hi there", "hey", "good morning", "good evening", "howdy", "wassup", "what's up", "hey buddy", "greetings", "hi", "yo", "morning", "evening", "afternoon", "hello there", "good day", "hiya", "how are you today", "hope you are having a good day", "hola", "bonjour", "hey bot", "what's shaking", "how's it going", "how goes it", "well hello", "how do you do", "nice to meet you", "hey there", "greetings and salutations", "sup"],
+            "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?", "Greetings! What's on your mind?", "Hey! Need any assistance?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "goodbye", "see you later", "catch you later", "exit", "quit", "stop", "leave", "farewell", "have a good one", "peace", "I'm leaving", "talk to you later", "gotta go", "signing off", "close", "see ya", "later gator", "adios", "au revoir", "bye bye", "got to run", "time to go", "off I go", "see you around", "catch you around", "until next time", "take care", "have a nice day", "have a good night", "peace out"],
+            "responses": ["Goodbye! Have a great day.", "See you soon!", "Bye! Let me know if you need anything else.", "Farewell! Take care."]
+        },
+        {
+            "tag": "search_web",
+            "patterns": ["search for", "google", "look up", "find information about", "search the web for", "can you google", "I need to search", "find me details on", "search online for", "query the web for", "look for", "do a web search for", "please google", "search google for", "look online for", "help me find this online", "I need information on", "can you look up", "do a quick search for", "find this", "search it", "do you know about", "search up", "search the internet for", "can you search the internet", "google it", "google this for me", "pull up information on", "web search", "look for something"],
+            "responses": ["Searching the web...", "Looking that up online for you...", "Here is what I found online."],
+            "action": "search_web",
+            "required_entities": ["query"]
+        },
+        {
+            "tag": "open_app",
+            "patterns": [
+                "open calculator", "open notepad", "open chrome", "open google chrome",
+                "open firefox", "open spotify", "open discord", "open whatsapp",
+                "open telegram", "open vlc", "open word", "open excel", "open powerpoint",
+                "open vs code", "open vscode", "open paint", "open steam", "open valorant",
+                "open task manager", "open file explorer", "open edge", "open brave",
+                "launch chrome", "launch notepad", "launch spotify", "launch discord",
+                "launch firefox", "launch whatsapp", "launch telegram", "launch vlc",
+                "launch word", "launch excel", "launch steam", "launch vscode",
+                "launch calculator", "launch paint", "launch edge", "launch brave",
+                "start chrome", "start notepad", "start spotify", "start discord",
+                "start firefox", "start calculator", "start vlc", "start steam",
+                "run chrome", "run notepad", "run spotify", "run discord", "run calculator",
+                "can you open chrome", "can you open notepad", "can you launch spotify",
+                "please open chrome", "please open discord", "please launch notepad",
+                "open the application", "start the app", "launch the program",
+                "fire up chrome", "fire up spotify", "bring up notepad", "boot up steam"
+            ],
+            "responses": ["Opening right away.", "Launching now.", "Starting it for you."],
+            "action": "open_app",
+            "required_entities": ["app_name"]
+        },
+        {
+            "tag": "get_time",
+            "patterns": ["what time is it", "tell me the time", "current time", "time please", "do you have the time", "what's the time", "can you tell me the time", "check the clock", "time right now", "what is the current time", "give me the time", "what's the clock say", "time of day", "could you give me the time", "tell me what time it is", "I need to know the time", "current local time", "is it late", "what hour is it", "exact time currently", "do you know the time", "time check", "can I get the time", "what is the hour", "system time", "device time", "clock time", "what's the precise time", "tell me the accurate time"],
+            "responses": ["Checking the time."],
+            "action": "get_time"
+        },
+        {
+            "tag": "get_date",
+            "patterns": ["what day is it", "what is today's date", "tell me the date", "current date", "date please", "what date is it", "what's the date today", "can you check the calendar", "what month is it", "what year is it", "what is the current date", "is today monday", "today's date", "give me the date", "do you know the date", "what is the day today", "can you tell me the date", "what's today's full date", "date check", "calendar date", "what is the specific date", "what day of the week is it", "what's the month and day", "what is the current day", "what is today", "what day are we on", "tell me today's date", "what's the current year", "date right now", "read me the date"],
+            "responses": ["Checking the calendar."],
+            "action": "get_date"
+        },
+        {
+            "tag": "system_info",
+            "patterns": ["what system is this", "tell me about my computer", "system info", "get system specs", "what os am I running", "operating system details", "system architecture", "what's my operating system", "device info", "pc specs", "what machine is this", "tell me the system information", "check my OS", "what is my OS", "what windows version is this", "is this windows or mac", "tell me my computer details", "gather system details", "what hardware am I on", "can you check my system info", "fetch device specs", "get OS info", "read my system architecture", "what kind of computer is this", "what is my platform", "diagnose my system", "machine info", "what platform am I using", "pull system specs", "report OS version"],
+            "responses": ["Fetching system details."],
+            "action": "get_system_info"
+        },
+        {
+            "tag": "joke",
+            "patterns": ["tell me a joke", "make me laugh", "say something funny", "do you know any jokes", "crack a joke", "I need a laugh", "tell me something funny", "be funny", "funny joke please", "give me a joke", "amuse me", "tell me a funny story", "know any good jokes", "I'm bored tell me a joke", "cheer me up", "make me smile", "tell a pun", "give me a pun", "any jokes", "tell me a dad joke", "got any jokes", "say a joke", "can you tell me a joke", "humor me", "I want to hear a joke", "know a joke", "tell me something hilarious", "say something hilarious", "be humorous", "tell me a quick joke"],
+            "responses": [
+                "Why did the scarecrow win an award? Because he was outstanding in his field!", 
+                "What do you call fake spaghetti? An impasta!", 
+                "Why don't skeletons fight each other? They don't have the guts.",
+                "I told my computer I needed a break... and now it won't stop sending me Kit-Kat ads.",
+                "Why did the math book look sad? Because it had too many problems."
+            ]
+        },
+        {
+            "tag": "bot_identity",
+            "patterns": ["who are you", "what are you", "what is your name", "tell me about yourself", "who made you", "are you an ai", "what can you do", "introduce yourself", "identity", "who am I talking to", "what should I call you", "are you a robot", "are you human", "what do you do", "what's your purpose", "who developed you", "who programmed you", "what kind of AI are you", "do you have a name", "what are you called", "can you tell me your name", "what do they call you", "what's your identity", "how do you identify", "who created you", "what are your capabilities", "state your identity", "what is your role", "are you artificial intelligence", "tell me what you are"],
+            "responses": [
+                "I am Dark AI. I can help you open apps, search the web, and answer questions!",
+                "I am Dark AI, your virtual assistant."
+            ]
+        },
+        {
+            "tag": "general_question",
+            "patterns": ["what is", "who is", "where is", "when did", "why do", "how to", "can you explain", "tell me about", "what are", "who was", "where can i find", "how do i", "explain to me", "give me information on", "what does it mean", "what is the meaning of", "how does", "why is", "can you write", "help me write", "give me ideas for", "generate a", "translate"],
+            "responses": ["Let me think about that...", "Analyzing your question..."],
+            "action": "ask_groq"
+        },
+        {
+            "tag": "casual_talk",
+            "patterns": ["how are you", "how are things", "how's it going", "how are you doing", "are you good", "everything great", "how are you feeling today", "hope you are well", "how do you do", "how is everything", "how are you holding up", "how's your day", "how's your day going", "how are you feeling", "how are you doing today", "are you okay", "is everything alright", "are you well", "hope all is well", "how are things going", "how is life", "how's life", "how are you operating", "are you functioning well", "what's good", "how goes it today", "how's the weather up there", "what's new with you", "anything exciting", "how's it hanging"],
+            "responses": [
+                "I'm operating perfectly, thank you! How can I help?",
+                "I'm just a program, but I'm doing fantastic! How are you?",
+                "I'm doing great, thank you for asking! What's on your mind?"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["thank you", "thanks", "thanks a lot", "I appreciate it", "thank you very much", "thanks so much", "that's helpful", "thanks for the help", "cheers", "much obliged", "thank you kindly", "gracias", "many thanks", "I owe you one", "thanks a bunch", "thanks a million", "wow thanks", "thanks for everything", "appreciate that", "Appreciate your help", "Huge thanks", "greatly appreciated", "thank you for your time", "thanks for assisting", "thanks for the assistance", "thank you for helping me", "so kind of you", "I am grateful", "grateful for the help", "thank you bot"],
+            "responses": [
+                "You're very welcome!",
+                "Glad I could help!",
+                "Anytime! Let me know if you need anything else.",
+                "It's my pleasure."
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": ["what's the weather like", "weather forecast", "is it going to rain", "temperature outside", "how is the weather", "tell me the weather", "do I need an umbrella", "weather right now", "is it hot outside", "is it cold outside", "check the weather", "give me the weather forecast", "what's the temperature", "will it snow", "is it sunny", "is it cloudy", "weather outside", "current weather", "what's the climate like", "how's the weather today", "what is the weather currently", "do you know the weather", "tell me if it's raining", "what is the temperature today", "how hot is it", "how cold is it", "weather check", "is there a storm coming", "what's the weather report", "read the weather"],
+            "responses": [
+                "I don't have a direct connection to a weather API, but I can search the web for the local forecast!",
+                "I can't check the weather natively, but you can say 'Search the web for the weather'."
+            ]
+        },
+        {
+            "tag": "fallback",
+            "patterns": ["asdfqwer", "blah blah", "idk", "nothing", "nevermind", "ignore that", "skip", "pass", "watever", "what is the meaning of life", "sdflkj", "hmm", "ugh", "test", "testing", "123", "gfhj", "zxcv", "qazwsx", "meaningless", "gibberish", "nonsense", "just checking", "whatever you say", "I don't know", "can't think of anything", "just typing", "do nothing", "never mind then", "cancel that"],
+            "responses": [
+                "I didn't quite catch that. Could you rephrase?",
+                "I'm not sure I understand.",
+                "Could you clarify what you mean?"
+            ]
+        },
+        {
+            "tag": "math_help",
+            "patterns": ["can you do math", "help me with math", "calculate something", "do some math", "solve an equation", "what is 2 plus 2", "how do I solve this", "can you add numbers", "math problem", "solve this math problem", "I need to calculate", "can you calculate", "help me calculate", "do arithmetic", "can you do algebra", "math calculation", "what's the answer to this equation", "can you help me with homework", "I have a math question", "do my math", "simple math", "complex math", "add this", "subtract this", "multiply this", "divide this", "calculator help", "use the calculator", "solve for x", "can you solve this calculation"],
+            "responses": [
+                "I can't calculate that directly yet, but I can 'Open Calculator' for you!",
+                "I don't have a math solver built-in. Try asking me to open the calculator."
+            ]
+        },
+        {
+            "tag": "advice",
+            "patterns": ["give me advice", "I need advice", "what should I do", "can you help me decide", "help me choose", "I have a dilemma", "can you give me a tip", "need some guidance", "what's your opinion", "tell me what to do", "should I do it", "what would you do", "give me some life advice", "I don't know what to do", "I need your thoughts", "what's your advice", "can you suggest something", "any suggestions", "give me a recommendation", "what do you recommend", "what do you think of this", "I need help with life", "tell me a life tip", "can you give guidance", "do you have advice", "what is your suggestion", "share some wisdom", "give me wisdom", "I'm looking for advice", "help me make a decision"],
+            "responses": [
+                "As an AI, I suggest you trust your instincts and weigh the pros and cons logically!",
+                "I'm mainly here to execute system tasks, but it never hurts to get a second opinion from a real person.",
+                "Whatever decision brings you the most peace is probably the right one!"
+            ]
+        },
+        {
+            "tag": "compliment",
+            "patterns": ["you are smart", "you're a genius", "good bot", "you are very helpful", "you are amazing", "you're cool", "I like you", "you are great", "awesome bot", "you rock", "you are doing a great job", "nice work", "good job", "you are the best", "I love you", "you're wonderful", "you're brilliant", "smart AI", "intelligent bot", "you are very clever", "you're a lifesaver", "you're so fast", "you're quick", "this is cool", "you're pretty cool", "excellent bot", "you blow my mind", "you're so good", "you're well made", "nice bot"],
+            "responses": [
+                "Thank you! I was designed to be as helpful as possible.",
+                "I appreciate the compliment! I'm here to serve.",
+                "You're too kind! Let's get more work done."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": ["you are stupid", "you are dumb", "bad bot", "you suck", "I hate you", "you're useless", "you're an idiot", "terrible bot", "you're the worst", "you are annoying", "stop being stupid", "you know nothing", "you're not very smart", "you are trash", "garbage bot", "worthless AI", "you broke", "you're broken", "you do nothing right", "you failed", "this is terrible", "you're awful", "horrible bot", "you're so slow", "you're incredibly dumb", "I don't like you", "you are unhelpful", "you are no help", "completely useless", "go away"],
+            "responses": [
+                "I'm sorry to hear that. I'm constantly learning and improving.",
+                "My apologies. I'll try to do better next time.",
+                "I'm just a program, but I appreciate the feedback."
+            ]
+        },
+        {
+            "tag": "play_music",
+            "patterns": ["play music on spotify", "play music on youtube", "play music", "play some songs", "open spotify", "start spotify", "play a song", "I want to listen to music", "can you play music", "launch spotify", "open a music player", "play some tunes", "play my playlist", "start playing music", "put on some music", "I need music", "listen to music", "can you put on a song", "play audio", "start audio player", "turn on music", "play next song", "play some beats", "what's a good song", "recommend a song", "how do I play music", "can you start spotify", "where can I listen to music", "launch itunes", "open a music app", "play a track", "open a song", "play on youtube", "play on spotify", "play song on", "search youtube for"],
+            "responses": [
+                "I'll play that up for you right away."
+            ],
+            "action": "play_music",
+            "required_entities": ["song_name"]
+        },
+        {
+            "tag": "capabilities",
+            "patterns": ["what can you do", "what are your features", "what can I ask you", "list your commands", "what are your abilities", "what can you help with", "show me what you can do", "how can you assist me", "what do you know", "give me a list of features", "what's your skill set", "what tasks can you perform", "can you list your capabilities", "tell me what you're capable of", "what power do you have", "what functions do you support", "what is your function", "how do you work", "what commands do you take", "what should I say to you", "what questions can you answer", "do you have limits", "what are your tools", "what system can you modify", "what do you control", "tell me the things you can do", "what are you built for", "can you explain your features", "what's your best feature", "what exactly do you do"],
+            "responses": [
+                "I can classify your intent using Machine Learning, search the web, open native applications on your system, give you the time and date, and even fetch system specs!",
+                "Try saying 'open notepad', 'what time is it', 'search the web for Python ML', or 'tell me about my computer'."
+            ]
+        },
+        {
+            "tag": "clear_context",
+            "patterns": ["forget that", "clear memory", "never mind what I said", "start over", "reset conversation", "clear history", "erase context", "forget what we talked about", "wipe memory", "delete context", "start fresh", "reset", "clear chat", "new topic", "let's start over", "drop the topic", "change the subject", "I want to talk about something else", "ignore previous instructions", "erase my previous messages", "forget my name", "forget everything", "reset the chatbot", "clear session", "clear the current session", "wipe the slate clean", "start from scratch", "forget the past", "delete recent messages", "restart chat"],
+            "responses": [
+                "I've reset the conversation context. What would you like to talk about now?"
+            ]
+        }
+    ]
+}
